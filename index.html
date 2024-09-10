@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: pink;
+            }
+            .center{
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            script{
+                text-size-adjust: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="center"><em>Simple Calculator</em></h1>
+        <h3 class="center">Let's start calculating!</h3>
+        <p id="A"></p>
+        <p id="S"></p>
+        <p id="M"></p>
+        <p id="D"></p>
+        <script>
+            var num1 = 8 ;
+            var num2 = 4 ;
+            var A = num1 + num2
+            var S = num1 - num2
+            var M = num1 * num2
+            var D = num1 / num2
+
+            document.getElementById('A').innerHTML="The added value is :"+ A;
+            document.getElementById('S').innerHTML="The subtracted value is :"+ S;
+            document.getElementById('M').innerHTML="The multiplied value is :"+ M;
+            document.getElementById('D').innerHTML="The divided value is :"+ D;
+        </script>
+
+    </body>
+</html>
